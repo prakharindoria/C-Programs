@@ -3,7 +3,8 @@ int tos;
 int arr[5];
 }
 
-
+//void push(struct stack *,int );
+//int pop(struct stack *);
 main(){
 int i,x,y;
 struct stack s;
