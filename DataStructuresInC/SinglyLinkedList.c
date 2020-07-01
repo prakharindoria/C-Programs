@@ -21,7 +21,6 @@ append(&start,60);
 display(start);
 count=countnodes(start);
 printf("Count: %d",count);
-
 }
 
 
@@ -37,33 +36,22 @@ if(*ps==NULL)
 }
 temp=*ps;
 while(temp->next!=NULL){
-
-
-    temp=temp->next;
-
+   temp=temp->next;
 }
 temp->next=p;
-
 }
 
 
 int display(struct node *p){
-
 if(p==NULL){
-
-    printf("List empty");
-    return;
+   printf("List empty");
+   return;
 }
 while(p!=NULL){
     printf("%d\n",p->data);
     p=p->next;
-
-
 }
-
-
 }
-
 
 
 int countnodes(struct node *p){
