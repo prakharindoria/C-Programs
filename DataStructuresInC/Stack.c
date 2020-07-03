@@ -2,7 +2,7 @@ struct stack{
 int tos;
 int arr[5];
 };
-//This is an example of bad programming. Refer Mainstack in this folder only.
+
 main(){
     int x;
     struct stack s;
