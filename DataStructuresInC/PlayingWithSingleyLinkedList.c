@@ -9,6 +9,7 @@ void append(struct node**,int);
 int display(struct node*);
 int countnodes(struct node*);
 int search(struct node*,int);
+void del_last(struct node **);
 
 void main(){
 struct node * start=NULL;
@@ -35,7 +36,8 @@ printf("\nSearch Your Node: ");
 scanf("%d",&ts);
 sr=search(start,ts);
 printf("Your Number is at Position : %d",sr);
-del_last();
+del_last(&start);
+printf("\nDeleting The Last Node,New List Is: ");
 display(start);
 getch();
 }
