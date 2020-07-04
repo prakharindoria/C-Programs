@@ -35,6 +35,8 @@ printf("\nSearch Your Node: ");
 scanf("%d",&ts);
 sr=search(start,ts);
 printf("Your Number is at Position : %d",sr);
+del_last();
+display(start);
 getch();
 }
 
@@ -75,6 +77,28 @@ while(p!=NULL){
 }
 return -1;
 
+
+}
+
+void del_last(struct node **ps){
+struct node *prev,*temp;
+if(*ps==NULL)
+{printf("List Empty");return;}
+if((*ps)->next==NULL){
+    free(*ps);
+    *ps=NULL;
+    return;
+
+}
+temp=*ps;
+while(temp->next!=NULL)
+{
+    prev=temp;
+    temp=temp->next;
+
+}
+free(temp);
+prev->next=NULL;
 
 }
 
