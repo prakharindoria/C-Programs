@@ -1,3 +1,14 @@
+/*
+A year is leap year if the following conditions are satisfied:
+
+Year is multiple of 400.
+Year is multiple of 4 and not multiple of 100.
+
+*/
+
+Year is multiple of 400.
+Year is multiple of 4 and not multiple of 100.
+
 main(){
 int year;
 printf("Enter Year to check: ");
